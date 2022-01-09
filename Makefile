@@ -1,5 +1,5 @@
 #Makefile
-objects = main.o node.o
+objects = main.o graph.o node.o randomEdge.o
 
 .PHONY: all
 all: bind
@@ -7,8 +7,10 @@ all: bind
 bind: ${objects}
 	gcc -o bind ${objects} -lstdc++
 
-main.o: node.h
+main.o: node.h graph.h randomEdge.h
+graph.o: graph.h node.h randomEdge.h
 node.o: node.h
+randomEdge.o: randomEdge.h
 
 .PHONY: clean
 clean:
