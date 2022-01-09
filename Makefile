@@ -7,7 +7,7 @@ all: bind
 bind: ${objects}
 	gcc -o bind ${objects} -lstdc++
 
-main.o: node.h graph.h randomEdge.h
+main.o: graph.h graph_processing.h
 graph.o: graph.h node.h randomEdge.h
 node.o: node.h
 randomEdge.o: randomEdge.h
