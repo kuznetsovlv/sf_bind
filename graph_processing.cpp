@@ -55,7 +55,7 @@ std::vector<std::vector<unsigned>> getDistances(const Graph &g)
 	return result;
 }
 
-void printEdgeMatrix(const Graph &g)
+void printMatrixes(const Graph &g)
 {
 	printMatrix(g._nodes, g._edges);
 	std::cout << std::endl;

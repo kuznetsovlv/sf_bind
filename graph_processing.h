@@ -3,4 +3,4 @@
 #include "graph.h"
 
 std::vector<std::vector<unsigned>> getDistances(const Graph&);
-void printEdgeMatrix(const Graph&);
+void printMatrixes(const Graph&);

@@ -4,6 +4,8 @@
 #include "node.h"
 #include "randomEdge.h"
 
+const std::string noName;
+
 Graph::~Graph()noexcept
 {
 	for(Node *node: _nodes)
@@ -27,4 +29,9 @@ void Graph::add(const std::string &name)
 
 	newEdges.push_back(0);
 	_edges.push_back(newEdges);
+}
+
+const std::string &Graph::name(size_t i)const noexcept
+{
+	return i < _nodes.size() ? _nodes[i]->name() : noName;
 }

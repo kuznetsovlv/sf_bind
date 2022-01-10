@@ -1,5 +1,9 @@
+#include <iostream>
+#include <vector>
+#include <cstddef>
 #include "graph.h"
 #include "graph_processing.h"
+#include "printPairs.h"
 
 int main()
 {
@@ -21,7 +25,12 @@ int main()
 	g.add("Михаил");
 	g.add("Максим");
 
-	printEdgeMatrix(g);
+	//Uncomment to show edge and distance matrixes
+	//printMatrixes(g);
+	//std::cout << std::endl;
+
+	printPairs(3, g);
+	std::cout << std::endl;
 
 	return 0;
 }

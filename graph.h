@@ -14,7 +14,8 @@ class Graph final
 	~Graph()noexcept;
 
 	void add(const std::string&);
+	const std::string &name(size_t)const noexcept;
 
 	friend std::vector<std::vector<unsigned>> getDistances(const Graph&);
-	friend void printEdgeMatrix(const Graph&);
+	friend void printMatrixes(const Graph&);
 };
