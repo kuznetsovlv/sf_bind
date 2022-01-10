@@ -43,6 +43,7 @@ std::vector<std::vector<unsigned>> getDistances(const Graph &g)
 				{
 					continue;
 				}
+				// To avoid overflow we expand value sizes by casting it to unsigned long long
 				unsigned long long distance = static_cast<unsigned long long> (result[j][i]) + static_cast<unsigned long long> (result[i][k]);
 				if(static_cast<unsigned long long> (result[j][k]) > distance)
 				{
