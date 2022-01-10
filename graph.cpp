@@ -18,7 +18,7 @@ void Graph::add(const std::string &name)
 
 	std::vector<unsigned> newEdges;
 
-	for(auto line: _edges)
+	for(auto &line: _edges)
 	{
 		unsigned edge = randomEdge();
 		newEdges.push_back(edge);

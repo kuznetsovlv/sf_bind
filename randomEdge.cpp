@@ -12,5 +12,5 @@ unsigned randomEdge()
 		initiated = true;
 	}
 
-	return rand() % 2;
+	return rand() % 100 < 15;
 }

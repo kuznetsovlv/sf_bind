@@ -15,6 +15,6 @@ class Graph final
 
 	void add(const std::string&);
 
-	friend std::vector<unsigned> getDistances(const Graph&);
+	friend std::vector<std::vector<unsigned>> getDistances(const Graph&);
 	friend void printEdgeMatrix(const Graph&);
 };
