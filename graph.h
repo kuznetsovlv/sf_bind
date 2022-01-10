@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include "node.h"
+#include "graph_processing.h"
 
 class Graph final
 {
@@ -12,5 +13,8 @@ class Graph final
 	public:
 	~Graph()noexcept;
 
-	void add(std::string&);
+	void add(const std::string&);
+
+	friend std::vector<unsigned> getDistances(const Graph&);
+	friend void printEdgeMatrix(const Graph&);
 };

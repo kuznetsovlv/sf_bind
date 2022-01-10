@@ -12,7 +12,7 @@ Graph::~Graph()noexcept
 	}
 }
 
-void Graph::add(std::string &name)
+void Graph::add(const std::string &name)
 {
 	_nodes.push_back(new Node(name));
 

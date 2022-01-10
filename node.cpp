@@ -1,7 +1,7 @@
 #include <string>
 #include "node.h"
 
-Node::Node(std::string &name)noexcept:_name(name)
+Node::Node(const std::string &name)noexcept:_name(name)
 {
 }
 

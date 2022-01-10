@@ -2,5 +2,5 @@
 #include <vector>
 #include "graph.h"
 
-std::vector<unsigned> getDistances(Graph&);
-void printEdgeMatrix(Graph&);
+std::vector<unsigned> getDistances(const Graph&);
+void printEdgeMatrix(const Graph&);
